@@ -1,0 +1,259 @@
+:root{
+    --color1: #a830c6;
+    --color2: #ffffff;
+}
+
+body{
+    background: linear-gradient(to right, #bb30c8, #2e3592);
+}
+
+.container{
+    margin-top: 30px;
+    background: #b1a9ff;
+    box-shadow: 3px 3px 20px rgba(0,0,0,.3);
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 1500px;
+}
+
+/* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1500px;
+} */
+
+.container table{
+    width: 100%;
+    border-color: #aa30c8;
+}
+
+.container table thead{
+    vertical-align: middle;
+    border-bottom-color: #fff;
+}
+
+.container table thead th,
+.container table tfoot th{
+    border-right-color: #fff ;
+}
+
+.container table thead th:first-child,
+.container table tfoot th:first-child{
+    border-left-color: #bb30c8;
+}
+
+.container table thead th:last-child,
+.container table tfoot th:last-child{
+    border-right-color: #c330c8;
+}
+
+table thead tr th,
+table tbody tr td,
+table tfoot tr th{
+    text-align: left !important;
+}
+
+table thead th:last-child{
+    pointer-events: none;
+}
+
+table thead th:last-child .dt-column-order{
+    display: none;
+}
+
+
+
+
+
+table tbody tr{
+    cursor: pointer;
+}
+
+table tbody tr:nth-child(even){
+    background: #f2f2f2 !important;
+}
+
+table tbody tr:hover{
+    background: #b630c8 !important;
+    color: #fff;
+}
+
+table tbody tr:hover td:not(:last-child){
+    border-right-color: #fff;
+}
+
+table tbody tr td{
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table tbody tr td:first-child{
+    font-weight: 600;
+    text-align: center !important;
+}
+
+table tbody .dt-empty{
+    text-align: center !important;
+}
+
+table thead tr,
+table tfoot tr{
+    background: #b630c8;
+    color: #fff;
+}
+
+tbody tr td:last-child,
+thead tr th:last-child,
+tfoot tr th:last-child{
+    width: 160px;
+}
+
+
+
+
+
+.pagination .dt-paging-button.active .page-link{
+    background: #b630c8 !important;
+    box-shadow: none;
+    border-color: #af30c8;
+}
+
+.pagination .dt-paging-button  .page-link{
+    border-color: #7b2e92;
+}
+
+.dt-length .form-select{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just in case */
+}
+
+.dt-scroll-body{
+    border-bottom: none !important;
+}
+
+.container table tbody tr:last-child{
+    border-bottom-color: #fff;
+}
+
+.btn{
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.btn button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #aa30c8;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.btn button i{
+    font-size: 18px;
+}
+
+.dt-length label, 
+.dt-info{
+    color: #a330c6;
+    font-weight: 600 !important;
+}
+
+#dt-search-0{
+    border-color: #bb30c8;
+    box-shadow: none;
+}
+
+#dt-length-0{
+    border-color: #a430c8;
+    box-shadow: none;
+}
+
+
+.actionBtn{
+    border: none;
+    outline: none;
+    background: #af30c8;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+tbody tr:hover .actionBtn{
+    background: #fff;
+    color: #8b30c8;
+}
+
+
+
+
+
+
+/* Modal */
+.modal-header{
+    background: #aa30c8;
+    color: #fff;
+}
+
+.cross{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: transparent;
+}
+
+.modal span{
+    color: rgb(204, 0, 255);
+    font-size: 18px;
+}
+
+
+.submitBtn{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #c830bb;
+    color: #fff;
+    font-weight: 600;
+}
+
+#logoutButton {
+    position: relative; /* Menggunakan posisi absolut */
+    top: 20px; /* Jarak dari atas */
+    left: 50%; /* Mengatur posisi horizontal ke tengah */
+    transform: translateX(-50%); /* Menggeser tombol ke kiri setengah lebar tombol */
+    padding: 10px 20px;
+    background-color: #be1d1d; /* Warna merah */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#logoutButton:hover {
+    background-color: #c92c82; /* Warna merah lebih gelap saat hover */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Menggunakan 100vw untuk lebar penuh */
+    height: 100vh; /* Menggunakan 100vh untuk tinggi penuh */
+    object-fit: cover; /* Menjaga rasio aspek video */
+    z-index: -1; /* Menempatkan video di belakang konten lainnya */
+}
